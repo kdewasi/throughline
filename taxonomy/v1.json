@@ -1,0 +1,222 @@
+{
+    "version": "1.0.0",
+    "notes": "v1 emotion taxonomy. 8 superior emotions, 4 sub-emotions each. Will expand as real films break it.",
+    "superior_emotions": [
+        {
+            "id": "wonder",
+            "name": "Wonder",
+            "gloss": "vastness, novelty, beauty",
+            "sub_emotions": [
+                {
+                    "id": "wonder.awe",
+                    "name": "Awe",
+                    "gloss": "scale that overwhelms"
+                },
+                {
+                    "id": "wonder.discovery",
+                    "name": "Discovery",
+                    "gloss": "the new is revealed"
+                },
+                {
+                    "id": "wonder.beauty",
+                    "name": "Beauty",
+                    "gloss": "aesthetic transcendence"
+                },
+                {
+                    "id": "wonder.mystery",
+                    "name": "Mystery",
+                    "gloss": "the unknown invites"
+                }
+            ]
+        },
+        {
+            "id": "dread",
+            "name": "Dread",
+            "gloss": "anticipation of bad outcomes",
+            "sub_emotions": [
+                {
+                    "id": "dread.stakes",
+                    "name": "Stakes",
+                    "gloss": "consequence is heavy"
+                },
+                {
+                    "id": "dread.foreboding",
+                    "name": "Foreboding",
+                    "gloss": "something is coming"
+                },
+                {
+                    "id": "dread.existential",
+                    "name": "Existential",
+                    "gloss": "ground falls away"
+                },
+                {
+                    "id": "dread.visceral",
+                    "name": "Visceral",
+                    "gloss": "body-level fear"
+                }
+            ]
+        },
+        {
+            "id": "grief",
+            "name": "Grief",
+            "gloss": "loss, mourning",
+            "sub_emotions": [
+                {
+                    "id": "grief.bereavement",
+                    "name": "Bereavement",
+                    "gloss": "death of someone loved"
+                },
+                {
+                    "id": "grief.loss_of_innocence",
+                    "name": "Loss of Innocence",
+                    "gloss": "the world was not what it seemed"
+                },
+                {
+                    "id": "grief.regret",
+                    "name": "Regret",
+                    "gloss": "the path not taken"
+                },
+                {
+                    "id": "grief.melancholy",
+                    "name": "Melancholy",
+                    "gloss": "diffuse sadness"
+                }
+            ]
+        },
+        {
+            "id": "triumph",
+            "name": "Triumph",
+            "gloss": "overcoming, victory, release",
+            "sub_emotions": [
+                {
+                    "id": "triumph.victory",
+                    "name": "Victory",
+                    "gloss": "external goal achieved"
+                },
+                {
+                    "id": "triumph.vindication",
+                    "name": "Vindication",
+                    "gloss": "they were right all along"
+                },
+                {
+                    "id": "triumph.self_actualization",
+                    "name": "Self-actualization",
+                    "gloss": "becoming who they were meant to be"
+                },
+                {
+                    "id": "triumph.catharsis",
+                    "name": "Catharsis",
+                    "gloss": "emotional release after pressure"
+                }
+            ]
+        },
+        {
+            "id": "warmth",
+            "name": "Warmth",
+            "gloss": "connection, belonging, love",
+            "sub_emotions": [
+                {
+                    "id": "warmth.camaraderie",
+                    "name": "Camaraderie",
+                    "gloss": "found family, ensemble bond"
+                },
+                {
+                    "id": "warmth.tenderness",
+                    "name": "Tenderness",
+                    "gloss": "intimate care"
+                },
+                {
+                    "id": "warmth.yearning",
+                    "name": "Yearning",
+                    "gloss": "the pull toward another"
+                },
+                {
+                    "id": "warmth.nostalgia",
+                    "name": "Nostalgia",
+                    "gloss": "warm return to something lost"
+                }
+            ]
+        },
+        {
+            "id": "moral_weight",
+            "name": "Moral Weight",
+            "gloss": "ethical pressure on the soul",
+            "sub_emotions": [
+                {
+                    "id": "moral_weight.compromise",
+                    "name": "Compromise",
+                    "gloss": "no clean choice"
+                },
+                {
+                    "id": "moral_weight.sacrifice",
+                    "name": "Sacrifice",
+                    "gloss": "giving up what matters for what matters more"
+                },
+                {
+                    "id": "moral_weight.conviction",
+                    "name": "Conviction",
+                    "gloss": "holding the line"
+                },
+                {
+                    "id": "moral_weight.guilt",
+                    "name": "Guilt",
+                    "gloss": "the cost lingers"
+                }
+            ]
+        },
+        {
+            "id": "tension",
+            "name": "Tension",
+            "gloss": "suspended outcome",
+            "sub_emotions": [
+                {
+                    "id": "tension.suspense",
+                    "name": "Suspense",
+                    "gloss": "what happens next"
+                },
+                {
+                    "id": "tension.confrontation",
+                    "name": "Confrontation",
+                    "gloss": "two forces meet"
+                },
+                {
+                    "id": "tension.chase",
+                    "name": "Chase",
+                    "gloss": "kinetic pursuit"
+                },
+                {
+                    "id": "tension.pressure",
+                    "name": "Pressure",
+                    "gloss": "the room closes in"
+                }
+            ]
+        },
+        {
+            "id": "joy",
+            "name": "Joy",
+            "gloss": "positive affect, delight",
+            "sub_emotions": [
+                {
+                    "id": "joy.delight",
+                    "name": "Delight",
+                    "gloss": "small pure pleasure"
+                },
+                {
+                    "id": "joy.humor",
+                    "name": "Humor",
+                    "gloss": "comedy lands"
+                },
+                {
+                    "id": "joy.hope",
+                    "name": "Hope",
+                    "gloss": "things might be okay"
+                },
+                {
+                    "id": "joy.exhilaration",
+                    "name": "Exhilaration",
+                    "gloss": "alive at the edge"
+                }
+            ]
+        }
+    ]
+}
