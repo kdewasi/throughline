@@ -1,0 +1,25 @@
+[project]
+name = "throughline"
+version = "0.1.0"
+description = "Film recommendations by emotional trajectory, not metadata."
+authors = [
+    { name = "Kishan", email = "kishandewasi606@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=0.100.0",
+    "fastapi>=0.136.1",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "uvicorn[standard]>=0.46.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.29,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.3.0",
+]
