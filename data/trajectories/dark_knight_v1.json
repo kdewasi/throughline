@@ -1,0 +1,115 @@
+{
+  "film_id": "dark_knight",
+  "film_title": "The Dark Knight",
+  "year": 2008,
+  "taxonomy_version": "1.0.0",
+  "beats": [
+    {
+      "position": 0.05,
+      "scene": "Joker's bank heist",
+      "tags": [
+        "tension.suspense",
+        "dread.foreboding"
+      ],
+      "intensity": 0.65,
+      "justification": "Opening betrayal sequence establishes Joker as threat and introduces chaos theme."
+    },
+    {
+      "position": 0.18,
+      "scene": "Harvey Dent's courtroom assassination attempt",
+      "tags": [
+        "tension.confrontation",
+        "joy.hope"
+      ],
+      "intensity": 0.55,
+      "justification": "Dent's courage in punching the shooter establishes him as Gotham's hopeful White Knight."
+    },
+    {
+      "position": 0.32,
+      "scene": "Joker's mob meeting entrance",
+      "tags": [
+        "dread.foreboding",
+        "tension.suspense"
+      ],
+      "intensity": 0.7,
+      "justification": "Grenade coat reveal and chaos speech introduces stakes and Joker's ideological threat."
+    },
+    {
+      "position": 0.42,
+      "scene": "Batman extracts Lau from Hong Kong",
+      "tags": [
+        "triumph.victory",
+        "tension.chase"
+      ],
+      "intensity": 0.65,
+      "justification": "Skyhook escape demonstrates Batman's capability and gives heroes momentum before reversal."
+    },
+    {
+      "position": 0.52,
+      "scene": "Commissioner Loeb and Judge Surillo murdered",
+      "tags": [
+        "dread.stakes",
+        "grief.loss_of_innocence"
+      ],
+      "intensity": 0.75,
+      "justification": "Joker's killing spree begins; the rules no longer protect anyone."
+    },
+    {
+      "position": 0.58,
+      "scene": "Gordon's fake death at funeral",
+      "tags": [
+        "grief.bereavement",
+        "dread.existential"
+      ],
+      "intensity": 0.8,
+      "justification": "Batman watches Gordon's family grieve; Barbara blames Batman for the chaos he's brought."
+    },
+    {
+      "position": 0.68,
+      "scene": "Rachel dies, Harvey disfigured",
+      "tags": [
+        "grief.bereavement",
+        "dread.visceral"
+      ],
+      "intensity": 0.95,
+      "justification": "The film's true low point; Batman arrives too late, both locations explode."
+    },
+    {
+      "position": 0.78,
+      "scene": "Joker visits Harvey in hospital",
+      "tags": [
+        "moral_weight.compromise",
+        "dread.existential"
+      ],
+      "intensity": 0.85,
+      "justification": "Joker corrupts Dent into Two-Face; chaos wins by breaking Gotham's White Knight."
+    },
+    {
+      "position": 0.88,
+      "scene": "Ferry standoff—neither detonates",
+      "tags": [
+        "tension.pressure",
+        "moral_weight.conviction"
+      ],
+      "intensity": 0.8,
+      "justification": "Civilians and prisoners both refuse to kill; Gotham's soul is tested and holds."
+    },
+    {
+      "position": 0.95,
+      "scene": "Two-Face falls, Batman takes blame",
+      "tags": [
+        "moral_weight.sacrifice",
+        "grief.regret",
+        "dread.existential"
+      ],
+      "intensity": 0.9,
+      "justification": "Batman becomes the villain to preserve Dent's heroic image and Gotham's hope."
+    }
+  ],
+  "endpoint_tags": [
+    "moral_weight.sacrifice",
+    "grief.regret",
+    "dread.existential"
+  ],
+  "dominant_register": "dread"
+}
