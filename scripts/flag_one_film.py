@@ -76,7 +76,7 @@ async def main(film_id: str) -> int:
         print(f"FLAGGING FAILED: {exc}", file=sys.stderr)
         return 2
 
-    output_path = _REPO_ROOT / "data" / "trajectories" / f"{film_id}_v1.json"
+    output_path = _REPO_ROOT / "data" / "trajectories" / f"{film_id}_v2.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(trajectory.model_dump(), f, indent=2, ensure_ascii=False)

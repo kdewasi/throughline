@@ -19,7 +19,7 @@ from throughline.taxonomy import all_valid_tag_ids, taxonomy_as_prompt_text
 
 # Repo root, used for locating prompt and plot files.
 _REPO_ROOT = Path(__file__).resolve().parents[2]
-_PROMPT_PATH = _REPO_ROOT / "prompts" / "flag_film_v1.md"
+_PROMPT_PATH = _REPO_ROOT / "prompts" / "flag_film_v2.md"
 
 _MODEL = "claude-sonnet-4-5"
 _MAX_TOKENS = 4000
@@ -103,7 +103,7 @@ async def flag_film(
     # Prefill makes the response start mid-JSON; re-add the opening brace.
     raw_output = "{" + response.content[0].text
     raw_output = _strip_markdown_fences(raw_output)
-    
+
     try:
         parsed = json.loads(raw_output)
     except json.JSONDecodeError as exc:
