@@ -22,7 +22,8 @@ shape and endpoint, not by tags.
 In progress — v1 in active development.
 
 - [x] Project scoped, taxonomy v1 drafted, eval set of 15 films locked
-- [ ] Plot ingestion + LLM-driven emotional flagging pipeline
+- [x] Plot ingestion + LLM-driven emotional flagging pipeline
+- [x] Versioned prompts with eval-driven iteration (v1 → v2 closed one loop on Dark Knight)
 - [ ] Trajectory storage and vector retrieval
 - [ ] Slider UI + trajectory line-graph visualization
 - [ ] Natural-language query path (agent loop)
@@ -47,4 +48,7 @@ film. Throughline is an attempt at that question.
 ## Notes
 
 A writeup explaining the approach, evaluation methodology, and what worked vs.
-what didn't will live in `/docs` once v1 ships.
+what didn't will live in `/docs` once v1 ships. In the meantime,
+`docs/findings/` contains per-film comparison notes documenting how the
+flagging pipeline performs against the eval set — the first one is
+`dark_knight_v1.md`.
