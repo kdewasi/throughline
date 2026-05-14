@@ -19,7 +19,19 @@ from throughline.taxonomy import all_valid_tag_ids, taxonomy_as_prompt_text
 
 # Repo root, used for locating prompt and plot files.
 _REPO_ROOT = Path(__file__).resolve().parents[2]
-_PROMPT_PATH = _REPO_ROOT / "prompts" / "flag_film_v2.md"
+_PROMPTS_DIR = _REPO_ROOT / "prompts"
+LATEST_PROMPT_VERSION = "v2"
+
+
+def _prompt_path_for_version(version: str) -> Path:
+    """Resolve a prompt version (e.g. 'v2') to the file on disk."""
+    path = _PROMPTS_DIR / f"flag_film_{version}.md"
+    if not path.exists():
+        raise FlaggingError(
+            f"Prompt version {version!r} not found at {path}. "
+            f"Expected file: {path.name}"
+        )
+    return path
 
 _MODEL = "claude-sonnet-4-5"
 _MAX_TOKENS = 4000
@@ -49,6 +61,7 @@ async def flag_film(
     film_title: str,
     year: int,
     plot_text: str,
+    prompt_version: str = LATEST_PROMPT_VERSION,
 ) -> Trajectory:
     """Run the flagging pipeline on a single film.
 
@@ -75,7 +88,8 @@ async def flag_film(
         If the LLM output cannot be parsed as JSON, doesn't match the
         Trajectory schema, or contains tag IDs not in the taxonomy.
     """
-    prompt_template = _PROMPT_PATH.read_text(encoding="utf-8")
+    prompt_path = _prompt_path_for_version(prompt_version)
+    prompt_template = prompt_path.read_text(encoding="utf-8")
     taxonomy_block = taxonomy_as_prompt_text()
 
     system_prompt = (
@@ -114,6 +128,8 @@ async def flag_film(
 
     try:
         trajectory = Trajectory.model_validate(parsed)
+        # Stamp the trajectory with the prompt version that produced it.
+        trajectory = trajectory.model_copy(update={"prompt_version": prompt_version})
     except ValidationError as exc:
         raise FlaggingError(
             f"Claude output failed schema validation:\n{exc}"

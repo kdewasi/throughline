@@ -64,6 +64,7 @@ class Trajectory(BaseModel):
     film_title: str = Field(min_length=1, max_length=200)
     year: int = Field(ge=1900, le=2100)
     taxonomy_version: str = Field(default="1.0.0")
+    prompt_version: str | None = Field(default=None, max_length=20)
     beats: list[Beat] = Field(min_length=4, max_length=20)
     endpoint_tags: list[str] = Field(min_length=1, max_length=4)
     dominant_register: str = Field(min_length=1, max_length=50)
