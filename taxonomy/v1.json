@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "notes": "v1 emotion taxonomy. 8 superior emotions, 4 sub-emotions each. Will expand as real films break it.",
+    "notes": "v1 emotion taxonomy. 8 superior emotions, 4 sub-emotions each. Will expand as real films break it. See taxonomy/v2_candidates.md for documented v2 candidates surfaced from eval-set labeling and prompt run findings.",
     "superior_emotions": [
         {
             "id": "wonder",
