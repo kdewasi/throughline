@@ -52,7 +52,7 @@ def _parse_plot_file(path: Path) -> tuple[str, int, str]:
     return title, year, body
 
 
-async def main(film_id: str) -> int:
+async def main(film_id: str, prompt_version: str) -> int:
     load_dotenv()
 
     plot_path = _REPO_ROOT / "data" / "plots" / "raw" / f"{film_id}.md"
@@ -64,19 +64,20 @@ async def main(film_id: str) -> int:
     title, year, body = _parse_plot_file(plot_path)
     print(f"Parsed: {title} ({year}), {len(body.split())} words of synopsis")
 
-    print(f"Calling Claude to flag {title}...")
+    print(f"Calling Claude to flag {title} with prompt {prompt_version}...")
     try:
         trajectory = await flag_film(
             film_id=film_id,
             film_title=title,
             year=year,
             plot_text=body,
+            prompt_version=prompt_version,
         )
     except FlaggingError as exc:
         print(f"FLAGGING FAILED: {exc}", file=sys.stderr)
         return 2
 
-    output_path = _REPO_ROOT / "data" / "trajectories" / f"{film_id}_v2.json"
+    output_path = (_REPO_ROOT / "data" / "trajectories" / f"{film_id}_{prompt_version}.json")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(trajectory.model_dump(), f, indent=2, ensure_ascii=False)
@@ -89,7 +90,14 @@ async def main(film_id: str) -> int:
 
 
 if __name__ == "__main__":
+    from throughline.flagging import LATEST_PROMPT_VERSION
+
     parser = argparse.ArgumentParser(description="Flag one film.")
     parser.add_argument("film_id", help="snake_case film id, e.g. 'dark_knight'")
+    parser.add_argument(
+        "--prompt-version",
+        default=LATEST_PROMPT_VERSION,
+        help=f"Prompt version to use (default: {LATEST_PROMPT_VERSION})",
+    )
     args = parser.parse_args()
-    sys.exit(asyncio.run(main(args.film_id)))
+    sys.exit(asyncio.run(main(args.film_id, args.prompt_version)))
