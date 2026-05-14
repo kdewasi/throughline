@@ -3,113 +3,115 @@
   "film_title": "The Dark Knight",
   "year": 2008,
   "taxonomy_version": "1.0.0",
+  "prompt_version": "v1",
   "beats": [
     {
       "position": 0.05,
-      "scene": "Joker's bank heist",
+      "scene": "Joker bank heist murders own crew",
       "tags": [
-        "tension.suspense",
-        "dread.foreboding"
-      ],
-      "intensity": 0.65,
-      "justification": "Opening betrayal sequence establishes Joker as threat and introduces chaos theme."
-    },
-    {
-      "position": 0.18,
-      "scene": "Harvey Dent's courtroom assassination attempt",
-      "tags": [
-        "tension.confrontation",
-        "joy.hope"
-      ],
-      "intensity": 0.55,
-      "justification": "Dent's courage in punching the shooter establishes him as Gotham's hopeful White Knight."
-    },
-    {
-      "position": 0.32,
-      "scene": "Joker's mob meeting entrance",
-      "tags": [
-        "dread.foreboding",
-        "tension.suspense"
+        "dread.visceral",
+        "wonder.mystery"
       ],
       "intensity": 0.7,
-      "justification": "Grenade coat reveal and chaos speech introduces stakes and Joker's ideological threat."
+      "justification": "Joker's cold murder of accomplices establishes him as unpredictable chaos agent while creating visceral fear and morbid fascination"
     },
     {
-      "position": 0.42,
-      "scene": "Batman extracts Lau from Hong Kong",
+      "position": 0.15,
+      "scene": "Harvey Dent introduced as White Knight",
       "tags": [
-        "triumph.victory",
-        "tension.chase"
+        "joy.hope",
+        "warmth.yearning"
+      ],
+      "intensity": 0.5,
+      "justification": "Dent's idealism and relationship with Rachel offers possibility of normal life for Bruce and legitimate heroism for Gotham"
+    },
+    {
+      "position": 0.3,
+      "scene": "Joker crashes mob meeting, threatens Gambol",
+      "tags": [
+        "dread.foreboding",
+        "tension.confrontation"
       ],
       "intensity": 0.65,
-      "justification": "Skyhook escape demonstrates Batman's capability and gives heroes momentum before reversal."
+      "justification": "Joker's grenade jacket entrance and dismissal by mob establishes rising threat; his murder of Gambol confirms he means business"
     },
     {
-      "position": 0.52,
+      "position": 0.45,
       "scene": "Commissioner Loeb and Judge Surillo murdered",
       "tags": [
         "dread.stakes",
         "grief.loss_of_innocence"
       ],
       "intensity": 0.75,
-      "justification": "Joker's killing spree begins; the rules no longer protect anyone."
+      "justification": "Joker's killings prove no one is safe; the rules Batman operates under no longer protect anyone"
     },
     {
-      "position": 0.58,
-      "scene": "Gordon's fake death at funeral",
+      "position": 0.55,
+      "scene": "Gordon fakes death, Harvey takes Batman's identity",
+      "tags": [
+        "moral_weight.sacrifice",
+        "tension.suspense"
+      ],
+      "intensity": 0.8,
+      "justification": "Harvey's false confession sacrifices his future while Gordon's staged death shows costs of opposing chaos"
+    },
+    {
+      "position": 0.65,
+      "scene": "Rachel dies in explosion, Harvey disfigured",
       "tags": [
         "grief.bereavement",
         "dread.existential"
       ],
-      "intensity": 0.8,
-      "justification": "Batman watches Gordon's family grieve; Barbara blames Batman for the chaos he's brought."
+      "intensity": 1.0,
+      "justification": "Batman arrives too late; Rachel's death and Harvey's transformation is the film's emotional nadir where hope collapses"
     },
     {
-      "position": 0.68,
-      "scene": "Rachel dies, Harvey disfigured",
-      "tags": [
-        "grief.bereavement",
-        "dread.visceral"
-      ],
-      "intensity": 0.95,
-      "justification": "The film's true low point; Batman arrives too late, both locations explode."
-    },
-    {
-      "position": 0.78,
-      "scene": "Joker visits Harvey in hospital",
+      "position": 0.75,
+      "scene": "Joker converts Harvey to Two-Face",
       "tags": [
         "moral_weight.compromise",
         "dread.existential"
       ],
       "intensity": 0.85,
-      "justification": "Joker corrupts Dent into Two-Face; chaos wins by breaking Gotham's White Knight."
+      "justification": "Gotham's White Knight becomes agent of chaos through coin-flip justice, fulfilling Joker's thesis about corruption"
     },
     {
-      "position": 0.88,
-      "scene": "Ferry standoff—neither detonates",
+      "position": 0.85,
+      "scene": "Ferry standoff, both refuse to kill",
       "tags": [
-        "tension.pressure",
-        "moral_weight.conviction"
+        "moral_weight.conviction",
+        "triumph.vindication"
       ],
-      "intensity": 0.8,
-      "justification": "Civilians and prisoners both refuse to kill; Gotham's soul is tested and holds."
+      "intensity": 0.7,
+      "justification": "Civilians and prisoners both reject Joker's game, proving humanity's capacity for good against his nihilism"
     },
     {
-      "position": 0.95,
-      "scene": "Two-Face falls, Batman takes blame",
+      "position": 0.92,
+      "scene": "Two-Face killed, Batman takes blame for murders",
       "tags": [
         "moral_weight.sacrifice",
         "grief.regret",
-        "dread.existential"
+        "dread.stakes"
       ],
-      "intensity": 0.9,
-      "justification": "Batman becomes the villain to preserve Dent's heroic image and Gotham's hope."
+      "intensity": 0.95,
+      "justification": "Batman becomes fugitive to preserve Dent's symbol; tactical victory requires accepting permanent villain status"
+    },
+    {
+      "position": 0.98,
+      "scene": "Gordon destroys Bat-signal, Alfred burns Rachel's letter",
+      "tags": [
+        "grief.melancholy",
+        "moral_weight.conviction",
+        "dread.stakes"
+      ],
+      "intensity": 0.85,
+      "justification": "All three sacrifices finalized: Batman's reputation, Bruce's hope with Rachel, Gordon's alliance publicly severed"
     }
   ],
   "endpoint_tags": [
+    "grief.melancholy",
     "moral_weight.sacrifice",
-    "grief.regret",
-    "dread.existential"
+    "dread.stakes"
   ],
   "dominant_register": "dread"
 }

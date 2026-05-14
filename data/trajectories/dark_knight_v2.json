@@ -3,95 +3,117 @@
   "film_title": "The Dark Knight",
   "year": 2008,
   "taxonomy_version": "1.0.0",
+  "prompt_version": "v2",
   "beats": [
     {
       "position": 0.05,
-      "scene": "Joker's bank heist betrayal",
+      "scene": "Joker's bank heist massacre",
       "tags": [
         "dread.foreboding",
         "tension.suspense"
       ],
-      "intensity": 0.6,
-      "justification": "The Joker emerges as an unpredictable force through cold betrayal of his own crew."
+      "intensity": 0.7,
+      "justification": "Opening establishes Joker's chaotic lethality and introduces the central threat."
     },
     {
       "position": 0.15,
-      "scene": "Batman inspired by Harvey Dent",
+      "scene": "Batman captures Scarecrow and fake Batmen",
       "tags": [
-        "warmth.camaraderie",
-        "joy.hope"
+        "tension.confrontation"
       ],
       "intensity": 0.5,
-      "justification": "Bruce sees Dent as Gotham's legitimate protector who could allow him to retire."
+      "justification": "Operational competence flex; no emotional catharsis, establishes Batman's capability."
+    },
+    {
+      "position": 0.25,
+      "scene": "Dent emerges as White Knight",
+      "tags": [
+        "joy.hope",
+        "warmth.camaraderie"
+      ],
+      "intensity": 0.6,
+      "justification": "Bruce sees Dent as Gotham's legitimate protector; possibility of normal life with Rachel emerges."
     },
     {
       "position": 0.35,
-      "scene": "Joker kills Gambol",
+      "scene": "Joker threatens mob, kills Gambol",
       "tags": [
-        "dread.visceral",
-        "tension.confrontation"
+        "dread.foreboding",
+        "dread.visceral"
       ],
-      "intensity": 0.7,
-      "justification": "Joker's 'how I got my scars' story and brutal murder establishes him as chaos incarnate."
+      "intensity": 0.75,
+      "justification": "Joker's scar story and casual brutality establish him as existential-level threat to order."
     },
     {
-      "position": 0.42,
+      "position": 0.45,
       "scene": "Batman extracts Lau from Hong Kong",
       "tags": [
         "tension.chase"
       ],
-      "intensity": 0.5,
-      "justification": "Operationally impressive but no emotional payoff—capability demonstration without catharsis."
+      "intensity": 0.55,
+      "justification": "Kinetic action sequence demonstrating capability; no emotional shift, just operational success."
     },
     {
       "position": 0.55,
-      "scene": "Gordon's fake death, Joker caught",
+      "scene": "Joker murders Judge and Commissioner",
       "tags": [
-        "triumph.victory"
+        "dread.stakes",
+        "grief.loss_of_innocence"
       ],
-      "intensity": 0.65,
-      "justification": "Gordon's reveal and Joker's capture feels like a mid-film high point for the heroes."
+      "intensity": 0.75,
+      "justification": "City realizes no one is safe; Gordon's staged death compounds the collapse of safety."
     },
     {
-      "position": 0.62,
-      "scene": "Rachel dies, Harvey burned",
+      "position": 0.65,
+      "scene": "Rachel's death and Harvey's corruption",
       "tags": [
         "grief.bereavement",
-        "moral_weight.compromise"
+        "moral_weight.compromise",
+        "dread.existential"
       ],
       "intensity": 0.95,
-      "justification": "The film's emotional center collapses—Rachel's death and Harvey's corruption are one continuous devastating beat."
+      "justification": "Film's emotional center breaks; Rachel dies, Harvey becomes Two-Face, hope collapses into chaos."
     },
     {
-      "position": 0.72,
-      "scene": "Joker destroys hospital",
+      "position": 0.75,
+      "scene": "Joker destroys hospital, Two-Face hunts",
       "tags": [
         "dread.existential",
         "moral_weight.compromise"
       ],
-      "intensity": 0.8,
-      "justification": "Harvey becomes Two-Face as the Joker walks from the exploding hospital—chaos wins, structure dissolves."
+      "intensity": 0.85,
+      "justification": "City descends into chaos; former White Knight now agent of chance-driven vengeance."
     },
     {
       "position": 0.85,
-      "scene": "Ferry standoff holds, both refuse",
+      "scene": "Ferry standoff — civilians and prisoners refuse",
       "tags": [
         "moral_weight.conviction",
         "triumph.vindication"
       ],
-      "intensity": 0.75,
-      "justification": "Both ferries refuse to kill—Gotham's citizens prove the Joker wrong about human nature."
+      "intensity": 0.8,
+      "justification": "Ordinary people reject Joker's moral experiment; humanity holds under extreme pressure."
     },
     {
-      "position": 0.93,
-      "scene": "Batman tackles Two-Face, takes the fall",
+      "position": 0.92,
+      "scene": "Batman stops Two-Face, Dent dies",
+      "tags": [
+        "grief.melancholy",
+        "moral_weight.sacrifice"
+      ],
+      "intensity": 0.85,
+      "justification": "Batman kills to save Gordon's son; White Knight falls, Dark Knight chooses the lie."
+    },
+    {
+      "position": 0.98,
+      "scene": "Batman becomes the villain Gotham needs",
       "tags": [
         "moral_weight.sacrifice",
         "triumph.vindication",
         "grief.melancholy"
       ],
       "intensity": 0.9,
-      "justification": "Batman chooses to become the villain to preserve Dent's symbol—purposeful sacrifice with quiet dignity underneath heavy cost."
+      "justification": "Batman accepts public vilification to preserve Dent's heroic image and Gotham's hope; purposeful isolation."
     }
   ],
   "endpoint_tags": [
