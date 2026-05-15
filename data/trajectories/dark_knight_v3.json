@@ -1,0 +1,95 @@
+{
+  "film_id": "dark_knight",
+  "film_title": "The Dark Knight",
+  "year": 2008,
+  "taxonomy_version": "1.0.0",
+  "prompt_version": "v3",
+  "beats": [
+    {
+      "position": 0.05,
+      "scene": "Joker's bank heist betrayals",
+      "tags": [
+        "tension.suspense",
+        "dread.foreboding"
+      ],
+      "intensity": 0.6,
+      "justification": "Opening introduces Joker as chaos agent through escalating betrayals — suspense builds as robbers eliminate each other, with foreboding that this man operates by different rules"
+    },
+    {
+      "position": 0.18,
+      "scene": "Hong Kong extraction",
+      "tags": [
+        "tension.chase"
+      ],
+      "intensity": 0.5,
+      "justification": "Batman infiltrates Lau's building and escapes via sky-hook — operational competence without emotional payoff, kinetic but not triumphant"
+    },
+    {
+      "position": 0.35,
+      "scene": "Joker threatens murders unless Batman reveals identity",
+      "tags": [
+        "dread.stakes",
+        "moral_weight.compromise"
+      ],
+      "intensity": 0.75,
+      "justification": "Commissioner and judge killed; stakes become personal and public — Batman faces impossible choice between revealing himself or letting innocents die"
+    },
+    {
+      "position": 0.48,
+      "scene": "Gordon fakes death, Joker captured",
+      "tags": [
+        "tension.confrontation",
+        "triumph.catharsis"
+      ],
+      "intensity": 0.7,
+      "justification": "Batman chooses not to kill Joker; Gordon reveals himself alive — brief cathartic release as Joker is captured and Batman's code holds"
+    },
+    {
+      "position": 0.58,
+      "scene": "Rachel dies, Harvey disfigured",
+      "tags": [
+        "grief.bereavement",
+        "moral_weight.compromise"
+      ],
+      "intensity": 0.95,
+      "justification": "Joker tricks Batman into saving Harvey instead of Rachel; both locations explode — the film's emotional center collapses, Batman's choice yields only loss, Harvey's soul breaks"
+    },
+    {
+      "position": 0.72,
+      "scene": "Hospital destruction, Harvey becomes Two-Face",
+      "tags": [
+        "dread.foreboding",
+        "moral_weight.compromise"
+      ],
+      "intensity": 0.8,
+      "justification": "Joker converts Harvey into agent of chaos; hospital explodes — Gotham's White Knight falls, moral structure crumbles"
+    },
+    {
+      "position": 0.85,
+      "scene": "Ferry standoff",
+      "tags": [
+        "tension.pressure",
+        "moral_weight.conviction"
+      ],
+      "intensity": 0.85,
+      "justification": "Two ferries hold detonators to each other's explosives; both groups refuse to kill — humanity holds the line under maximum moral pressure"
+    },
+    {
+      "position": 0.92,
+      "scene": "Two-Face killed, Batman takes the fall",
+      "tags": [
+        "moral_weight.sacrifice",
+        "triumph.vindication",
+        "grief.melancholy"
+      ],
+      "intensity": 0.9,
+      "justification": "Batman stops Harvey's execution of Gordon's son, then chooses to take blame for Harvey's murders to preserve Gotham's hope — purposeful sacrifice with underlying vindication that meaning can be chosen even at soul-breaking cost, textured with heavy melancholy"
+    }
+  ],
+  "endpoint_tags": [
+    "moral_weight.sacrifice",
+    "triumph.vindication",
+    "grief.melancholy"
+  ],
+  "dominant_register": "moral_weight"
+}
