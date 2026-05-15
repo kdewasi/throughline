@@ -20,7 +20,7 @@ from throughline.taxonomy import all_valid_tag_ids, taxonomy_as_prompt_text
 # Repo root, used for locating prompt and plot files.
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 _PROMPTS_DIR = _REPO_ROOT / "prompts"
-LATEST_PROMPT_VERSION = "v2"
+LATEST_PROMPT_VERSION = "v3"
 
 
 def _prompt_path_for_version(version: str) -> Path:
